@@ -1,0 +1,2039 @@
+[
+    {
+        "id": "bd04aa922311dc5e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "376978a49ab959c1",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "611281c6fbd4714f",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "64b79a50571c28d7",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "194f9cbfd93b228b",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "s71200",
+        "vartable": [
+            {
+                "addr": "M1000.0",
+                "name": "Ligar Bomba Massa"
+            },
+            {
+                "addr": "Q0.0",
+                "name": "Bomba Massa"
+            },
+            {
+                "addr": "M1000.3",
+                "name": "Ligar Moinho"
+            },
+            {
+                "addr": "Q0.2",
+                "name": "Moinho"
+            },
+            {
+                "addr": "M1000.6",
+                "name": "Ligar SemFim Alm Bomba"
+            },
+            {
+                "addr": "Q0.1",
+                "name": "SemFim Alm. Bomba"
+            },
+            {
+                "addr": "M1001.1",
+                "name": "Ligar SemFim Alm Moinho"
+            },
+            {
+                "addr": "Q0.3",
+                "name": "SemFim Alm. Moinho"
+            },
+            {
+                "addr": "M1001.4",
+                "name": "Ligar SemFim Torvas 2"
+            },
+            {
+                "addr": "Q0.4",
+                "name": "SemFim Torvas 2"
+            },
+            {
+                "addr": "M1001.7",
+                "name": "Ligar SemFim Torvas 1"
+            },
+            {
+                "addr": "Q0.5",
+                "name": "SemFim Torvas 1"
+            },
+            {
+                "addr": "M1002.2",
+                "name": "Ligar Vibrador 1"
+            },
+            {
+                "addr": "Q0.6",
+                "name": "Vibrador 1"
+            },
+            {
+                "addr": "M1002.5",
+                "name": "Ligar Vibrador 2"
+            },
+            {
+                "addr": "Q0.7",
+                "name": "Vibrador 2"
+            },
+            {
+                "addr": "M1002.6",
+                "name": "Ligar Vibrador 3"
+            },
+            {
+                "addr": "Q1.0",
+                "name": "Vibrador 3"
+            },
+            {
+                "addr": "M1002.7",
+                "name": "Ligar Vibrador 4"
+            },
+            {
+                "addr": "Q1.1",
+                "name": "Vibrador 4"
+            },
+            {
+                "addr": "M1003.0",
+                "name": "Ligar Vibrador 5"
+            },
+            {
+                "addr": "Q2.0",
+                "name": "Vibrador 5"
+            },
+            {
+                "addr": "M1003.1",
+                "name": "Ligar Vibrador 6"
+            },
+            {
+                "addr": "Q2.1",
+                "name": "Vibrador 6"
+            },
+            {
+                "addr": "MW500",
+                "name": "Ultima Torva Usada"
+            },
+            {
+                "addr": "DB2,WORD14",
+                "name": "Password"
+            },
+            {
+                "addr": "DB2,X0.0",
+                "name": "Manual Automatico"
+            },
+            {
+                "addr": "I1.4",
+                "name": "Sensor Nivel Max"
+            },
+            {
+                "addr": "I1.5",
+                "name": "Sensor de Segurança Moinho"
+            }
+        ]
+    },
+    {
+        "id": "ae89a3294f11f19e",
+        "type": "ui_group",
+        "name": "dashboard",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5ca29ded7b4539ec",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Medeiros&Cavaleiro",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 60,
+                "sy": 30,
+                "gx": 6,
+                "gy": 6,
+                "cx": 0,
+                "cy": 0,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b4902874d2b10bb8",
+        "type": "ui_group",
+        "name": "controlo remoto 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "47ac4929e05b605c",
+        "type": "ui_group",
+        "name": "controlo remoto 2",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3abaa780c1f97e20",
+        "type": "ui_tab",
+        "name": "Maquinas",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a160d2075de78be8",
+        "type": "ui_group",
+        "name": "Bomba de Massa",
+        "tab": "3abaa780c1f97e20",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "afac1c03c2c121b4",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "de11afee85a7a067",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "5hmaj7j1qijne9ai4s4gylhkiu620gkyfmknhl50do864ynu26gq65mnib0zlzuo",
+        "server": "nodered02.remote-red.com",
+        "region": "de"
+    },
+    {
+        "id": "23de99022fa92a26",
+        "type": "ui_group",
+        "name": "Sem-Fim Alimenta Bomba",
+        "tab": "3abaa780c1f97e20",
+        "order": 2,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5dd34880514f6394",
+        "type": "ui_tab",
+        "name": "Torvas",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b140bb87ef34439b",
+        "type": "ui_group",
+        "name": "Moinho",
+        "tab": "3abaa780c1f97e20",
+        "order": 3,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e2fe0df1d1eba45e",
+        "type": "ui_group",
+        "name": "Sem-Fim Alimenta Moinho",
+        "tab": "3abaa780c1f97e20",
+        "order": 4,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "98c8ec5db600a276",
+        "type": "ui_group",
+        "name": "Sem-Fim Torvas 2",
+        "tab": "3abaa780c1f97e20",
+        "order": 5,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f99893ab7af0de0a",
+        "type": "ui_group",
+        "name": "Sem-Fim Torvas 1",
+        "tab": "3abaa780c1f97e20",
+        "order": 6,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0fa198f53cffbe1a",
+        "type": "ui_group",
+        "name": "Torva 1",
+        "tab": "5dd34880514f6394",
+        "order": 2,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c1e6e74745c22a62",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "",
+                "name": ""
+            }
+        ]
+    },
+    {
+        "id": "781519543a48a0c1",
+        "type": "ui_group",
+        "name": "",
+        "tab": "5dd34880514f6394",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4c5f19eaee6cd5bc",
+        "type": "ui_group",
+        "name": "Torva 2",
+        "tab": "5dd34880514f6394",
+        "order": 3,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e3793a39d2f4c6a8",
+        "type": "ui_group",
+        "name": "Torva 4",
+        "tab": "5dd34880514f6394",
+        "order": 5,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c9f8b936758faf8a",
+        "type": "ui_group",
+        "name": "Torva 3",
+        "tab": "5dd34880514f6394",
+        "order": 4,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "283bac567a349adc",
+        "type": "ui_group",
+        "name": "Torva 5",
+        "tab": "5dd34880514f6394",
+        "order": 6,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d7250ece28a941a8",
+        "type": "ui_group",
+        "name": "Torva 6",
+        "tab": "5dd34880514f6394",
+        "order": 7,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f13363e53c496827",
+        "type": "ui_tab",
+        "name": "man/aut",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "677a1ad911fb6b92",
+        "type": "ui_group",
+        "name": "Password",
+        "tab": "f13363e53c496827",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "069306831149e6a2",
+        "type": "ui_group",
+        "name": "Automático",
+        "tab": "f13363e53c496827",
+        "order": 2,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "db695503acc5a7e6",
+        "type": "ui_group",
+        "name": "Manual",
+        "tab": "f13363e53c496827",
+        "order": 3,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "096e55907369e94e",
+        "type": "ui_spacer",
+        "z": "611281c6fbd4714f",
+        "name": "spacer",
+        "group": "069306831149e6a2",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e57ead976e3fae32",
+        "type": "ui_spacer",
+        "z": "611281c6fbd4714f",
+        "name": "spacer",
+        "group": "069306831149e6a2",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "287b2380c4019166",
+        "type": "ui_spacer",
+        "z": "611281c6fbd4714f",
+        "name": "spacer",
+        "group": "db695503acc5a7e6",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e09c581bc011fc8a",
+        "type": "ui_spacer",
+        "z": "611281c6fbd4714f",
+        "name": "spacer",
+        "group": "db695503acc5a7e6",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "4095da248993cb2b",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default"
+    },
+    {
+        "id": "5559e5490302898f",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "ae5e5d96f961327e",
+        "type": "ui-page",
+        "name": "Page N",
+        "ui": "4095da248993cb2b",
+        "path": "/pageN",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "5559e5490302898f",
+        "order": -1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "d4268c1a935d21dc",
+        "type": "ui-group",
+        "name": "My Group",
+        "page": "ae5e5d96f961327e",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "b5d26dbbc2f8558d",
+        "type": "ui_spacer",
+        "z": "bd04aa922311dc5e",
+        "name": "spacer",
+        "group": "b140bb87ef34439b",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "14dcc398bb2d7ef8",
+        "type": "ui_spacer",
+        "z": "bd04aa922311dc5e",
+        "name": "spacer",
+        "group": "b140bb87ef34439b",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "281ab369945c79d6",
+        "type": "ui_template",
+        "z": "bd04aa922311dc5e",
+        "group": "a160d2075de78be8",
+        "name": "Ligar Bomba Massa",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Bomba de Massa\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 920,
+        "wires": [
+            [
+                "5fcff3c163c8270d"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "cd4fb9438c84068e",
+        "type": "ui_led",
+        "z": "bd04aa922311dc5e",
+        "order": 2,
+        "group": "a160d2075de78be8",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led Bomba Massa",
+        "x": 790,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "303bd471decc0698",
+        "type": "s7 in",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Bomba Massa",
+        "diff": true,
+        "name": "",
+        "x": 530,
+        "y": 860,
+        "wires": [
+            [
+                "cd4fb9438c84068e",
+                "2cc7a68f5a8e25e7"
+            ]
+        ]
+    },
+    {
+        "id": "5fcff3c163c8270d",
+        "type": "s7 out",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar Bomba Massa",
+        "name": "",
+        "x": 820,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "51559b7249782150",
+        "type": "remote-access",
+        "z": "bd04aa922311dc5e",
+        "confignode": "de11afee85a7a067",
+        "name": "",
+        "verbose": 0,
+        "x": 600,
+        "y": 700,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d3de559c708b7b45",
+        "type": "ui_template",
+        "z": "bd04aa922311dc5e",
+        "group": "b140bb87ef34439b",
+        "name": "Ligar Moinho",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao1 {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao1\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Moinho\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 1120,
+        "wires": [
+            [
+                "ecb59b083e5209ee"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "ecb59b083e5209ee",
+        "type": "s7 out",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar Moinho",
+        "name": "",
+        "x": 770,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "854562fcb87a9e4c",
+        "type": "s7 in",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Moinho",
+        "diff": true,
+        "name": "",
+        "x": 530,
+        "y": 1060,
+        "wires": [
+            [
+                "244f4c2408b7f39d"
+            ]
+        ]
+    },
+    {
+        "id": "244f4c2408b7f39d",
+        "type": "ui_led",
+        "z": "bd04aa922311dc5e",
+        "order": 2,
+        "group": "b140bb87ef34439b",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led Moinho",
+        "x": 770,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "f3a7a529cc463a41",
+        "type": "ui_template",
+        "z": "bd04aa922311dc5e",
+        "group": "23de99022fa92a26",
+        "name": "Ligar SemFim Alm Bomba",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao2 {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao2\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Sem-Fim Alm Bomba\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 1440,
+        "wires": [
+            [
+                "1f7a23657ff6300c"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "1f7a23657ff6300c",
+        "type": "s7 out",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar SemFim Alm Bomba",
+        "name": "",
+        "x": 830,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "d17cfa06cb56f038",
+        "type": "s7 in",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "SemFim Alm. Bomba",
+        "diff": true,
+        "name": "",
+        "x": 580,
+        "y": 1380,
+        "wires": [
+            [
+                "3090f0e71209205a"
+            ]
+        ]
+    },
+    {
+        "id": "3090f0e71209205a",
+        "type": "ui_led",
+        "z": "bd04aa922311dc5e",
+        "order": 2,
+        "group": "23de99022fa92a26",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led SemFim Alm Bomba",
+        "x": 830,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "e41d69078d84b3d4",
+        "type": "ui_template",
+        "z": "bd04aa922311dc5e",
+        "group": "e2fe0df1d1eba45e",
+        "name": "Ligar SemFim Alm Moinho",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao3 {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao3\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Sem-Fim Alm Moinho\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 1660,
+        "wires": [
+            [
+                "a5b91de6d91f31b8"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "a5b91de6d91f31b8",
+        "type": "s7 out",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar SemFim Alm Moinho",
+        "name": "",
+        "x": 840,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "d4ae8910cc1851b7",
+        "type": "s7 in",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "SemFim Alm. Moinho",
+        "diff": true,
+        "name": "",
+        "x": 580,
+        "y": 1600,
+        "wires": [
+            [
+                "0d60c0ee6eb8cd93"
+            ]
+        ]
+    },
+    {
+        "id": "0d60c0ee6eb8cd93",
+        "type": "ui_led",
+        "z": "bd04aa922311dc5e",
+        "order": 2,
+        "group": "e2fe0df1d1eba45e",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led SemFim Alm Moinho",
+        "x": 830,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "33d921d6c0b4ae3a",
+        "type": "ui_template",
+        "z": "bd04aa922311dc5e",
+        "group": "98c8ec5db600a276",
+        "name": "Ligar SemFim Torvas 2",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao4 {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao4\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Sem-Fim Torvas 2\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 1880,
+        "wires": [
+            [
+                "d36a613cb7e1d3ce"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "d36a613cb7e1d3ce",
+        "type": "s7 out",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar SemFim Torvas 2",
+        "name": "",
+        "x": 830,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "78e736b50acb4684",
+        "type": "s7 in",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "SemFim Torvas 2",
+        "diff": true,
+        "name": "",
+        "x": 560,
+        "y": 1820,
+        "wires": [
+            [
+                "b6817c1b96ad2cb9"
+            ]
+        ]
+    },
+    {
+        "id": "b6817c1b96ad2cb9",
+        "type": "ui_led",
+        "z": "bd04aa922311dc5e",
+        "order": 2,
+        "group": "98c8ec5db600a276",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led SemFim Torvas 2",
+        "x": 820,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "356fb705f5beeec8",
+        "type": "ui_template",
+        "z": "bd04aa922311dc5e",
+        "group": "f99893ab7af0de0a",
+        "name": "Ligar SemFim Torvas 1",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao5 {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao5\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Sem-Fim Torvas 1\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 610,
+        "y": 2100,
+        "wires": [
+            [
+                "0c57c364f551488f"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "0c57c364f551488f",
+        "type": "s7 out",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar SemFim Torvas 1",
+        "name": "",
+        "x": 870,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "12f4a59127cabed8",
+        "type": "s7 in",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "SemFim Torvas 1",
+        "diff": true,
+        "name": "",
+        "x": 600,
+        "y": 2040,
+        "wires": [
+            [
+                "35986359649832de"
+            ]
+        ]
+    },
+    {
+        "id": "35986359649832de",
+        "type": "ui_led",
+        "z": "bd04aa922311dc5e",
+        "order": 2,
+        "group": "f99893ab7af0de0a",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led SemFim Torvas 1",
+        "x": 860,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "2cc7a68f5a8e25e7",
+        "type": "debug",
+        "z": "bd04aa922311dc5e",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "51a447e521140963",
+        "type": "s7 in",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Sensor Nivel Max",
+        "diff": true,
+        "name": "",
+        "x": 540,
+        "y": 1180,
+        "wires": [
+            [
+                "3dfd4265a4cbceae"
+            ]
+        ]
+    },
+    {
+        "id": "20d164791f7bd434",
+        "type": "s7 in",
+        "z": "bd04aa922311dc5e",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Sensor de Segurança Moinho",
+        "diff": true,
+        "name": "",
+        "x": 580,
+        "y": 1240,
+        "wires": [
+            [
+                "0da76c25d345cb8e"
+            ]
+        ]
+    },
+    {
+        "id": "3dfd4265a4cbceae",
+        "type": "ui_led",
+        "z": "bd04aa922311dc5e",
+        "order": 3,
+        "group": "b140bb87ef34439b",
+        "width": 3,
+        "height": 2,
+        "label": "Nivel Max",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "nivel max.",
+        "x": 820,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "0da76c25d345cb8e",
+        "type": "ui_led",
+        "z": "bd04aa922311dc5e",
+        "order": 5,
+        "group": "b140bb87ef34439b",
+        "width": 3,
+        "height": 2,
+        "label": "Porta Aberta",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "segurança",
+        "x": 830,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "9b52131482b896ec",
+        "type": "ui_template",
+        "z": "376978a49ab959c1",
+        "group": "0fa198f53cffbe1a",
+        "name": "Vibrador 1",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao6 {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao6\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Vibrador 1\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 430,
+        "y": 300,
+        "wires": [
+            [
+                "22701f51e7f65f63"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "7b1b42d7ec3957f4",
+        "type": "ui_led",
+        "z": "376978a49ab959c1",
+        "order": 2,
+        "group": "0fa198f53cffbe1a",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led vibrador 1",
+        "x": 720,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "eb45b9077ae60320",
+        "type": "s7 in",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Vibrador 1",
+        "diff": true,
+        "name": "",
+        "x": 440,
+        "y": 240,
+        "wires": [
+            [
+                "7b1b42d7ec3957f4"
+            ]
+        ]
+    },
+    {
+        "id": "22701f51e7f65f63",
+        "type": "s7 out",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar Vibrador 1",
+        "name": "",
+        "x": 720,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1fc042b3f5bc38ce",
+        "type": "s7 in",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Ultima Torva Usada",
+        "diff": true,
+        "name": "",
+        "x": 450,
+        "y": 100,
+        "wires": [
+            [
+                "a9f8768f66f63790"
+            ]
+        ]
+    },
+    {
+        "id": "a9f8768f66f63790",
+        "type": "ui_text",
+        "z": "376978a49ab959c1",
+        "group": "781519543a48a0c1",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Ultima torva Usada",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "30",
+        "color": "#54b5be",
+        "x": 770,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c2d27b7d1f2d98be",
+        "type": "ui_template",
+        "z": "376978a49ab959c1",
+        "group": "781519543a48a0c1",
+        "name": "",
+        "order": 2,
+        "width": 6,
+        "height": 2,
+        "format": "<style>\n    .UltimaTorva{\n        font-size: 20px;\n        font-weight: bold;\n        color: #0eb8c0; /* Cor do texto */\n    }\n    .UltimaTorva > .Label {\n        font-size: 20px;\n        font-weight: bold;\n        color: #0eb8c0;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 420,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b92e5ce6de56b140",
+        "type": "ui_template",
+        "z": "376978a49ab959c1",
+        "group": "4c5f19eaee6cd5bc",
+        "name": "Vibrador 2",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao7 {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao7\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Vibrador 2\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 410,
+        "y": 480,
+        "wires": [
+            [
+                "cef3d5df2d7c20f2"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "6dc150df4c7c9b72",
+        "type": "ui_led",
+        "z": "376978a49ab959c1",
+        "order": 2,
+        "group": "4c5f19eaee6cd5bc",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led vibrador 2",
+        "x": 700,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9893abcd3c32bbc1",
+        "type": "s7 in",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Vibrador 2",
+        "diff": true,
+        "name": "",
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "6dc150df4c7c9b72"
+            ]
+        ]
+    },
+    {
+        "id": "cef3d5df2d7c20f2",
+        "type": "s7 out",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar Vibrador 2",
+        "name": "",
+        "x": 700,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2404a1954287f683",
+        "type": "ui_template",
+        "z": "376978a49ab959c1",
+        "group": "e3793a39d2f4c6a8",
+        "name": "Vibrador 4",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao9 {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao9\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Vibrador 4\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 410,
+        "y": 860,
+        "wires": [
+            [
+                "da81a0ba8f2f3a22"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "46340a1c1f1fd7b7",
+        "type": "ui_led",
+        "z": "376978a49ab959c1",
+        "order": 2,
+        "group": "e3793a39d2f4c6a8",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led vibrador 4",
+        "x": 700,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "2ccbceaa9cf182ac",
+        "type": "s7 in",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Vibrador 4",
+        "diff": true,
+        "name": "",
+        "x": 420,
+        "y": 800,
+        "wires": [
+            [
+                "46340a1c1f1fd7b7"
+            ]
+        ]
+    },
+    {
+        "id": "da81a0ba8f2f3a22",
+        "type": "s7 out",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar Vibrador 4",
+        "name": "",
+        "x": 700,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "b78c319643eed209",
+        "type": "ui_template",
+        "z": "376978a49ab959c1",
+        "group": "c9f8b936758faf8a",
+        "name": "Vibrador 3",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao8 {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao8\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Vibrador 3\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 410,
+        "y": 660,
+        "wires": [
+            [
+                "8f1e753ac61b627c"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "f65b26716b363d98",
+        "type": "ui_led",
+        "z": "376978a49ab959c1",
+        "order": 2,
+        "group": "c9f8b936758faf8a",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led vibrador 3",
+        "x": 700,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "950ae8d4dbe2627a",
+        "type": "s7 in",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Vibrador 3",
+        "diff": true,
+        "name": "",
+        "x": 420,
+        "y": 600,
+        "wires": [
+            [
+                "f65b26716b363d98"
+            ]
+        ]
+    },
+    {
+        "id": "8f1e753ac61b627c",
+        "type": "s7 out",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar Vibrador 3",
+        "name": "",
+        "x": 700,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "f0c2f160a53b53a2",
+        "type": "ui_template",
+        "z": "376978a49ab959c1",
+        "group": "283bac567a349adc",
+        "name": "Vibrador 5",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao10 {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao10\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Vibrador 5\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 410,
+        "y": 1040,
+        "wires": [
+            [
+                "b10b69176c23da92"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "efb298a9752d75d7",
+        "type": "ui_led",
+        "z": "376978a49ab959c1",
+        "order": 2,
+        "group": "283bac567a349adc",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led vibrador 5",
+        "x": 700,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "0f0bdce770dad94f",
+        "type": "s7 in",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Vibrador 5",
+        "diff": true,
+        "name": "",
+        "x": 420,
+        "y": 980,
+        "wires": [
+            [
+                "efb298a9752d75d7"
+            ]
+        ]
+    },
+    {
+        "id": "b10b69176c23da92",
+        "type": "s7 out",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar Vibrador 5",
+        "name": "",
+        "x": 700,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "2d371360e23b5e64",
+        "type": "ui_template",
+        "z": "376978a49ab959c1",
+        "group": "d7250ece28a941a8",
+        "name": "Vibrador 6",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "\n<style>\n  .botao11 {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: white;\n    border: 2px solid #000;\n    border-radius: 5px;\n    width: 200px;\n    height: 80px;\n    background-color: grey;\n  }\n</style>\n  \n <button class=\"botao11\"\n        ng-mousedown=\"send({payload: true})\"\n        ng-mouseup=\"send({payload: false})\"\n        ng-touchstart=\"send({payload: true})\"\n        ng-touchend=\"send({payload: false})\">\n        Vibrador 6\n</button>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 410,
+        "y": 1220,
+        "wires": [
+            [
+                "9dadcff58f3774ce"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_button.png"
+    },
+    {
+        "id": "0600a4fea0b0b692",
+        "type": "ui_led",
+        "z": "376978a49ab959c1",
+        "order": 2,
+        "group": "d7250ece28a941a8",
+        "width": 3,
+        "height": 3,
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "led vibrador 6",
+        "x": 700,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "5a052ff6785d3274",
+        "type": "s7 in",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Vibrador 6",
+        "diff": true,
+        "name": "",
+        "x": 420,
+        "y": 1160,
+        "wires": [
+            [
+                "0600a4fea0b0b692"
+            ]
+        ]
+    },
+    {
+        "id": "9dadcff58f3774ce",
+        "type": "s7 out",
+        "z": "376978a49ab959c1",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Ligar Vibrador 6",
+        "name": "",
+        "x": 700,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "209c8cadb1d43df1",
+        "type": "s7 out",
+        "z": "611281c6fbd4714f",
+        "endpoint": "194f9cbfd93b228b",
+        "variable": "Password",
+        "name": "",
+        "x": 920,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6a19fa0a438e289f",
+        "type": "debug",
+        "z": "611281c6fbd4714f",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "c8fb6070e7e404eb",
+        "type": "debug",
+        "z": "611281c6fbd4714f",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "057a52e0a3d804b9",
+        "type": "ui_text_input",
+        "z": "611281c6fbd4714f",
+        "name": "",
+        "label": "Password",
+        "tooltip": "",
+        "group": "677a1ad911fb6b92",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "passthru": true,
+        "mode": "password",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "f951e2d9c3a70253",
+                "6a19fa0a438e289f"
+            ]
+        ]
+    },
+    {
+        "id": "f951e2d9c3a70253",
+        "type": "function",
+        "z": "611281c6fbd4714f",
+        "name": "muda string para number",
+        "func": "// Verifica se a msg.payload é uma string\nif (typeof msg.payload === 'string') {\n    // Tenta converter a string para um número\n    var numero = parseFloat(msg.payload);\n\n    if (!isNaN(numero)) {\n        // Atualiza a msg.payload com o número convertido\n        msg.payload = numero;\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 300,
+        "wires": [
+            [
+                "209c8cadb1d43df1",
+                "c8fb6070e7e404eb"
+            ]
+        ]
+    },
+    {
+        "id": "f76819ccd0464b7b",
+        "type": "s7 in",
+        "z": "611281c6fbd4714f",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Manual Automatico",
+        "diff": true,
+        "name": "",
+        "x": 570,
+        "y": 620,
+        "wires": [
+            [
+                "a2c3c140b3a832f5"
+            ]
+        ]
+    },
+    {
+        "id": "b8798315a0497da6",
+        "type": "s7 in",
+        "z": "611281c6fbd4714f",
+        "endpoint": "194f9cbfd93b228b",
+        "mode": "single",
+        "variable": "Manual Automatico",
+        "diff": true,
+        "name": "",
+        "x": 570,
+        "y": 680,
+        "wires": [
+            [
+                "1a7217a5869f5086"
+            ]
+        ]
+    },
+    {
+        "id": "a2c3c140b3a832f5",
+        "type": "ui_led",
+        "z": "611281c6fbd4714f",
+        "order": 2,
+        "group": "069306831149e6a2",
+        "width": "3",
+        "height": "3",
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "automatico",
+        "x": 810,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "1a7217a5869f5086",
+        "type": "ui_led",
+        "z": "611281c6fbd4714f",
+        "order": 2,
+        "group": "db695503acc5a7e6",
+        "width": "3",
+        "height": "3",
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#808080",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "manual",
+        "x": 800,
+        "y": 680,
+        "wires": []
+    }
+]
